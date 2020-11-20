@@ -10,7 +10,9 @@ CREATE TABLE usuario(
 	nome VARCHAR(60) NOT NULL,
 	sobrenome VARCHAR(60) NOT NULL,
 	login VARCHAR(60) NOT NULL,
+	senha VARCHAR(30) NOT NULL,
 	id_empresa INT NOT NULL,
+	cargo VARCHAR(30),
 	PRIMARY KEY (id),
 	FOREIGN KEY (id_empresa) REFERENCES empresa (id),
 );
