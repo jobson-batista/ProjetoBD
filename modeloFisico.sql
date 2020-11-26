@@ -21,7 +21,7 @@ CREATE TABLE comentario(
 	id INT NOT  NULL,
 	id_usuario INT NOT NULL,
 	id_empresa INT NOT NULL,
-	anonimo CHAR(1) NOT NULL,
+	anonimo BIT NOT NULL,
 	titulo VARCHAR(30) NOT NULL,
 	descricao VARCHAR(300) NOT NULL,
 	PRIMARY KEY (id),
