@@ -1,13 +1,14 @@
+-- EMPRESAS
 INSERT INTO empresa (id,cnpj,nome)
-VALUES (1,'123','espakrow');
+VALUES (1,'123','speakrow1');
+
 INSERT INTO empresa (id,cnpj,nome)
-VALUES (2,'124','espakrow2');
+VALUES (2,'124','speakrow2');
+
 INSERT INTO empresa (id,cnpj,nome)
-VALUES (3,'125','espakrow3');
+VALUES (3,'125','speakrow3');
 
-SELECT * FROM empresa;
-
-
+-- USUARIO
 INSERT INTO usuario (id,nome,sobrenome,login,senha,id_empresa,cargo)
 VALUES (1,'Alefe','Guimaraes','alefe.guimaraes','123',1,'RH');
 
@@ -23,9 +24,7 @@ VALUES (4,'Josue','Alves','josue.alves','123',3,'EST');
 INSERT INTO usuario (id,nome,sobrenome,login,senha,id_empresa,cargo)
 VALUES (5,'Joyce','Sousa','joyce.sousa','123',1,'DIS');
 
-SELECT * FROM usuario;
-
-
+-- USUARIO_EMPRESA
 INSERT INTO usuario_empresa (id_usuario,id_empresa)
 VALUES (1,1);
 
@@ -41,9 +40,7 @@ VALUES (4,3);
 INSERT INTO usuario_empresa (id_usuario,id_empresa)
 VALUES (5,1);
 
-SELECT * FROM usuario_empresa;
-
-
+-- COMENTARIO
 INSERT INTO comentario (id, id_usuario, id_empresa, anonimo, titulo, descricao) 
 VALUES (1, 1, 2, 1, 'Titulo 1', 'O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.');
 
@@ -61,5 +58,3 @@ VALUES (5, 5, 3, 1, 'Titulo 5', 'O Lorem Ipsum é um texto modelo da indústria ti
 
 INSERT INTO comentario (id, id_usuario, id_empresa, anonimo, titulo, descricao) 
 VALUES (6, 3, 1, 0, 'Titulo 6', 'O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.');
-
-SELECT * FROM comentario;
